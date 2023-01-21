@@ -1,4 +1,4 @@
-package POO_Composicao.DesafioCompra;
+package POO_Composicao.DesafioComposicao;
 
 public class Main {
     public static void main(String[] args) {
