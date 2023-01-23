@@ -1,4 +1,4 @@
-package POO.Heranca.ENUM;
+package ENUM;
 
 public enum Direcao {
     NORTE, LESTE,OESTE, SUL

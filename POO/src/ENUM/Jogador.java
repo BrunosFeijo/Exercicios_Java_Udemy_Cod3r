@@ -1,4 +1,4 @@
-package POO.Heranca.ENUM;
+package ENUM;
 
 public class Jogador {
     int x;
