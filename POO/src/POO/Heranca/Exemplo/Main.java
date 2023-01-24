@@ -6,9 +6,7 @@ public class Main {
         j1.x = 10;
         j1.y = 10;
 
-        Heroi j2 = new Heroi();
-        j2.x = 12;
-        j2.y = 12;
+        Heroi j2 = new Heroi(12,12);
 
         j1.andar(Direcao.SUL);
         j1.andar(Direcao.SUL);
