@@ -1,13 +1,16 @@
 package POO.Heranca.Desafio;
-
+//Parte 1
 //Criar uma classe carro, uma de civic (que estende carro) e uma de ferrari (que estende carro).
 //Definir um atributo velocidade
 //Definir dois métodos (acelerar e frear)
 //A ferrari deve acelerar mais rápido
+
+//Parte 2
+//Crie um contrutor que receba a velocidade máxima por parâmetro na superclasse
 public class Main {
     public static void main(String[] args) {
-        Carro civic = new Civic();
-        Carro ferrari = new Ferrari();
+        Carro civic = new Civic(150);
+        Carro ferrari = new Ferrari(250);
 
         civic.acelerar();
         civic.acelerar();
