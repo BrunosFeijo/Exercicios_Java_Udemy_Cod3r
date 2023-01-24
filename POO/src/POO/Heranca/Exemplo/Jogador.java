@@ -1,4 +1,4 @@
-package POO.Heranca;
+package POO.Heranca.Exemplo;
 
 public class Jogador {
     int x;
