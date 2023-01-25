@@ -1,4 +1,4 @@
-package POO.Interface;
+package Interface;
 
 public interface Luxo {
     void ligarAr();

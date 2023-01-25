@@ -1,4 +1,4 @@
-package POO.ClasseAbstrata;
+package ClasseAbstrata;
 
 public class Cachorro extends Mamífero{
     @Override

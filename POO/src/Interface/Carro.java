@@ -1,4 +1,4 @@
-package POO.Interface;
+package Interface;
 
 public class Carro {
     double velocidade = 0;

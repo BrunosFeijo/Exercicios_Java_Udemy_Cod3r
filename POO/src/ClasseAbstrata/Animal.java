@@ -1,4 +1,4 @@
-package POO.ClasseAbstrata;
+package ClasseAbstrata;
 
 public abstract class Animal {
      protected String respirar(){
