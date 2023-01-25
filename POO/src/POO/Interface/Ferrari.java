@@ -1,4 +1,4 @@
-package POO.Abstracao.Interface;
+package POO.Interface;
 
 public class Ferrari extends Carro implements Esportivo, Luxo {
     private boolean ligarTurbo;

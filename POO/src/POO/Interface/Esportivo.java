@@ -1,4 +1,4 @@
-package POO.Abstracao.Interface;
+package POO.Interface;
 
 public interface Esportivo {
 

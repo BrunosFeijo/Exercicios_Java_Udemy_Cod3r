@@ -1,4 +1,4 @@
-package POO.Abstracao.Interface;
+package POO.Interface;
 
 public class Civic extends Carro {
     Civic(int velocidadeMaxima){
