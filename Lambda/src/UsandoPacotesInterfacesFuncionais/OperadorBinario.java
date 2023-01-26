@@ -2,8 +2,9 @@ package UsandoPacotesInterfacesFuncionais;
 
 import java.util.function.BinaryOperator;
 
-public class Main {
+public class OperadorBinario {
     public static void main(String[] args) {
+        //Recebe dois parametros de mesmo TIPO e retorna o mesmo TIPO
         BinaryOperator<Double> calc = Double::sum;
         System.out.println(calc.apply(2.0, 3.0));
 
