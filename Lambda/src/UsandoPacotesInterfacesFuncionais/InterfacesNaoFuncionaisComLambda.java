@@ -3,9 +3,7 @@ package UsandoPacotesInterfacesFuncionais;
 public class InterfacesNaoFuncionaisComLambda {
     public static void main(String[] args) {
         Runnable trabalho1 = new Trabalho1();
-        Runnable trabalho2 = new Runnable() {
-            @Override
-            public void run() {
+        Runnable trabalho2 = () -> {
                 for (int i = 0; i < 10; i++) {
                     System.out.println("Tarefa #02");
                     try {
@@ -13,7 +11,6 @@ public class InterfacesNaoFuncionaisComLambda {
                     } catch (Exception e) {
                     }
                 }
-            }
         };
         Runnable trabalho3 = InterfacesNaoFuncionaisComLambda::trabalho3;
 
