@@ -3,9 +3,9 @@ package UsandoPacotesInterfacesFuncionais;
 import java.text.DecimalFormat;
 
 public class Produto {
-    final String nome;
-    final double preco;
-    final double desconto;
+    private final String nome;
+    private final double preco;
+    private final double desconto;
 
     public Produto(String nome, double preco, double desconto) {
         this.nome = nome;
@@ -17,5 +17,17 @@ public class Produto {
     public String toString() {
         double precoFinal =  preco * (1 - desconto);
         return nome + ": R$" + precoFinal;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public double getDesconto() {
+        return desconto;
     }
 }
