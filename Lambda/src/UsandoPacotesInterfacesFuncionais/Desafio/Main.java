@@ -22,6 +22,9 @@ public class Main {
         UnaryOperator<Double> comFrete = x -> x >= 3000 ? x + 100 : x + 50;
         Function<Double,String> formatar = x -> "R$" + duasCasasDecimais.format(x);
 
+//        Outra possibilidade de formatar casas decimais
+//        Double.parseDouble(String.format("%.2f", x));
+
         System.out.println(comDesconto
                 .andThen(comImposto)
                 .andThen(comFrete)
