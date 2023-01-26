@@ -1,5 +1,7 @@
 package UsandoPacotesInterfacesFuncionais;
 
+import java.text.DecimalFormat;
+
 public class Produto {
     final String nome;
     final double preco;
@@ -9,5 +11,11 @@ public class Produto {
         this.nome = nome;
         this.preco = preco;
         this.desconto = desconto;
+    }
+
+    @Override
+    public String toString() {
+        double precoFinal =  preco * (1 - desconto);
+        return nome + ": R$" + precoFinal;
     }
 }
