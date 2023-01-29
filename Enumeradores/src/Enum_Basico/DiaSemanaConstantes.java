@@ -1,3 +1,5 @@
+package Enum_Basico;
+
 public class DiaSemanaConstantes {
     public final String SEGUNDA = "Segunda-feira";
     public final String TERCA ="Terça-feira";
