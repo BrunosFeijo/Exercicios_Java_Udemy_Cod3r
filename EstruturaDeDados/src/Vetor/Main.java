@@ -12,6 +12,7 @@ public class Main {
         System.out.println(v);
 
         System.out.println();
+
         //Testando versão com Object
         VetorGenericoUsandoObject vObject = new VetorGenericoUsandoObject(5);
 
@@ -20,5 +21,7 @@ public class Main {
         vObject.adiciona(true);
 
         System.out.println(vObject);
+
+
     }
 }
