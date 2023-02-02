@@ -72,7 +72,7 @@ public class VetorGenericoUsandoObject {
     public String toString() {
         StringBuilder s = new StringBuilder();
         s.append("[");
-        for (int i = 0; i < this.tamanho-1; i++) {
+        for (int i = 0; i < this.tamanho - 1; i++) {
             s.append(this.elementos[i]);
             s.append(", ");
         }
