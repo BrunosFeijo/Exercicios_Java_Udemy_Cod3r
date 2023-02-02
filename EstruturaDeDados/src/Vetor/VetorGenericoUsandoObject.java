@@ -72,13 +72,13 @@ public class VetorGenericoUsandoObject {
     public String toString() {
         StringBuilder s = new StringBuilder();
         s.append("[");
-        for (int i = 0; i < this.tamanho; i++) {
+        for (int i = 0; i < this.tamanho-1; i++) {
             s.append(this.elementos[i]);
             s.append(", ");
         }
-//        if (this.tamanho > 0) {
-//            s.append(this.elementos[this.tamanho - 1]);
-//        }
+        if (this.tamanho > 0) {
+            s.append(this.elementos[this.tamanho - 1]);
+        }
         s.append("]");
 
         return s.toString();
