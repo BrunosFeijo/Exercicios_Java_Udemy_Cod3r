@@ -1,3 +1,5 @@
+package EstruturaEstatica;
+
 public class EstruturaEstatica<T> {
     protected T[] elementos;
     protected int tamanho;
