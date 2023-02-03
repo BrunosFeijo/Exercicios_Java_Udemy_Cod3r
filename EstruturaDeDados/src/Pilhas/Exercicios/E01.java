@@ -11,12 +11,13 @@ import java.util.Random;
 public class E01 {
     public static void main(String[] args) {
         Random random = new Random();
-        Pilha<Integer> pilha = new Pilha<>(10);
+        Pilha<Integer> pilha = new Pilha<>();
         int num = -1;
 
+        System.out.println("Ler números: ");
         for (int i = 0; i < 10; i++) {
             num = random.nextInt(100);
-            System.out.println(num);
+            //System.out.println(num);
             if ((num % 2) == 0) {
                 pilha.empilha(num);
             } else if (pilha.estaVazia()) {
@@ -26,6 +27,7 @@ public class E01 {
             }
         }
 
+        System.out.println("\nAinda existem numeros na pilha?");
         if (!pilha.estaVazia()) {
             for (int i = pilha.tamanho() - 1; i >= 0; i--) {
                 System.out.println(pilha.topo());
