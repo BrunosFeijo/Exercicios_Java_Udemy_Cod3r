@@ -29,7 +29,7 @@ public class VetorGenericoUsandoObject {
         this.aumentaCapacidade();
 
         //mover todos os elementos
-        for (int i = this.tamanho; i > posicao; i--) {
+        for (int i = this.tamanho - 1; i >= posicao; i--) {
             this.elementos[i + 1] = this.elementos[i];
         }
         this.elementos[posicao] = elemento;
