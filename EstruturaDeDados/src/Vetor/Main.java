@@ -45,7 +45,7 @@ public class Main {
         vLista.adiciona(0);
         vLista.adiciona(1);
         vLista.adiciona(2);
-        vLista.adiciona(1,3);
+        vLista.adiciona(1, 3);
 
         System.out.println(vLista);
         System.out.println("Localiza '3' -> index: " + vLista.buscaElemento(3) + "\n" +
