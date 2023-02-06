@@ -1,8 +1,7 @@
 package Pilhas.Exercicios;
-// Usando uma pilha, desenvolva um programa queresolva o quebra cabeça Torre de Hanoi
+// Usando uma pilha, desenvolva um programa que resolva o quebra cabeça Torre de Hanoi
 
 import java.util.Stack;
-import java.util.function.Consumer;
 
 public class E06 {
     public static void main(String[] args) {
@@ -22,7 +21,6 @@ public class E06 {
     }
 
     public static void torreDeHanoi(int n, Stack<Integer> torreA, Stack<Integer> torreB, Stack<Integer> torreC) {
-        Consumer<Integer> imprimir = p -> System.out.println(p);
         if (n > 0) {
             torreDeHanoi(n - 1, torreA, torreC, torreB);
             torreB.push(torreA.pop());
