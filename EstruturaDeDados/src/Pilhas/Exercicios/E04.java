@@ -12,6 +12,7 @@ public class E04 {
             imprimeResultado(")A+B(");
             imprimeResultado("(A+B(");
             imprimeResultado("{[(A+B)]}");
+            imprimeResultado("(A+B}");
     }
     public static void imprimeResultado(String expressao){
         System.out.println(expressao + " está balanceado? " +
