@@ -31,7 +31,7 @@ public class Fila<T> extends EstruturaEstatica<T> {
             elementos[i] = elementos[i+1];
         }
         this.tamanho--;
-        
+
         return retorno;
     }
 
