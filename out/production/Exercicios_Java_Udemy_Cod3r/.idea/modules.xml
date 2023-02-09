@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Basico/Basico.iml" filepath="$PROJECT_DIR$/Basico/Basico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Enumeradores/Enumeradores.iml" filepath="$PROJECT_DIR$/Enumeradores/Enumeradores.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EstruturaDeDados/EstruturaDeDados.iml" filepath="$PROJECT_DIR$/EstruturaDeDados/EstruturaDeDados.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Exercicios_Java_Udemy_Cod3r.iml" filepath="$PROJECT_DIR$/.idea/Exercicios_Java_Udemy_Cod3r.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lambda/Lambda.iml" filepath="$PROJECT_DIR$/Lambda/Lambda.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO/POO.iml" filepath="$PROJECT_DIR$/POO/POO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Recursividade/Recursividade.iml" filepath="$PROJECT_DIR$/Recursividade/Recursividade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stream/Stream.iml" filepath="$PROJECT_DIR$/Stream/Stream.iml" />
     </modules>
   </component>
 </project>
