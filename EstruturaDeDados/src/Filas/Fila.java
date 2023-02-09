@@ -25,12 +25,14 @@ public class Fila<T> extends EstruturaEstatica<T> {
     // A + B + C + D + E -> Remove o primeiro termo (0)
     // B + C + D + E
     public T desenfileirar(){
+        T retorno = this.elementos[0];
         if (this.estaVazia()) throw new IllegalArgumentException("Fila está vazia");
         for (int i = 0; i < tamanho - 1;i++){
             elementos[i] = elementos[i+1];
         }
         this.tamanho--;
-        return this.elementos[tamanho];
+        
+        return retorno;
     }
 
 }
