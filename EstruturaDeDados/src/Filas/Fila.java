@@ -9,15 +9,13 @@ public class Fila<T> extends EstruturaEstatica<T> {
     }
 
     public Fila() {
+        super();
     }
 
     public void enfileirar(T elemento) {
         super.adiciona(elemento);
     }
 
-    public void enfileirar(int posicao, T elemento) {
-        super.adiciona(posicao, elemento);
-    }
     public T espiar(){
         if (this.estaVazia()) return null;
         return this.elementos[0];
