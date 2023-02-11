@@ -36,6 +36,9 @@ public class Paciente implements Comparable<Paciente>{
             return -1;
         }
         return 0;
+
+        // Outra forma de comparar e dar o retorno.
+        // return Integer.valueOf(this.prioridade).compareTo(novoPaciente.getPrioridade());
     }
 
     @Override
