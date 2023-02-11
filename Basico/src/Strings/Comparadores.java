@@ -37,13 +37,13 @@ public class Comparadores {
         String aMaiusculo = "A";
 
         // compareTO
-         // -1 = a > b
+         // -1 = a < b
          //  0 = a == b
-         //  1 || > 1 = a < b
-        System.out.println("-1 = a > b   ==> " + a.compareTo(b));
+         //  1 || > 1 = a > b
+        System.out.println("-1 = a < b   ==> " + a.compareTo(b));
         System.out.println(" 0 = (a == b)==>  " + a.compareTo("a"));
-        System.out.println(">=1 = a < b  ==>  " + b.compareTo(a));
-        System.out.println(">=1 = a < b  ==> " + a.compareTo(aMaiusculo));
+        System.out.println(">=1 = b > a  ==>  " + b.compareTo(a));
+        System.out.println(">=1 = a > b  ==> " + a.compareTo(aMaiusculo));
 
     }
 }

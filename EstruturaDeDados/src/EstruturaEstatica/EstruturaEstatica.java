@@ -31,7 +31,7 @@ public class EstruturaEstatica<T> {
 
         this.aumentaCapacidade();
 
-        for (int i = tamanho; i >= posicao; i--) {
+        for (int i = tamanho; i > posicao; i--) {
             this.elementos[i] = elementos[i - 1];
         }
         this.elementos[posicao] = elemento;
