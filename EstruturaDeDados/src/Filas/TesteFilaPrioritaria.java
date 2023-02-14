@@ -1,5 +1,7 @@
 package Filas;
 
+import java.util.PriorityQueue;
+
 public class TesteFilaPrioritaria {
     public static void main(String[] args) {
         FilaPrioritaria<Paciente> fila = new FilaPrioritaria<Paciente>();
