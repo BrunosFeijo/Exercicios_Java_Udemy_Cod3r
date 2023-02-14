@@ -7,6 +7,7 @@ package Filas.Exercícios.E03;
 // * A cada 4 segundos, uma pessoa chega no PS com prioridade aleatória.
 
 import java.util.PriorityQueue;
+import java.util.Random;
 
 public class E03 {
     public static void main(String[] args) {
@@ -22,20 +23,57 @@ public class E03 {
         Thread atendimento = new Thread(new Runnable() {
             @Override
             public void run() {
-
-
+                while(!fila.isEmpty()){
+                    try {
+                        atendimento(fila);
+                        Thread.sleep(3000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+                System.out.println("Atendimento finalizado!");
             }
         });
         Thread chegadaNovoPaciente = new Thread(new Runnable() {
             @Override
             public void run() {
+                while (fila.size() != 10){
+                    try {
+                        chegada(fila);
+                        Thread.sleep(2000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
 
             }
         });
+            atendimento.start();
+            chegadaNovoPaciente.start();
     }
-    public static void atendimento(PriorityQueue fila){
+
+    public static void atendimento(PriorityQueue fila) {
         System.out.println("Paciente " + fila.poll() + " está sendo atendido");
     }
 
-    
+    public static void chegada(PriorityQueue fila) {
+        Random prioridade = new Random();
+        int valor = prioridade.nextInt(3);
+
+        switch (valor) {
+            case 0:
+                fila.add(CodigoPrioridade.VERMELHO);
+                System.out.println("Paciente VERMELHO chegou");
+                break;
+            case 1:
+                fila.add(CodigoPrioridade.AMARELO);
+                System.out.println("Paciente AMARELO chegou");
+                break;
+            case 2:
+                fila.add(CodigoPrioridade.VERDE);
+                System.out.println("Paciente VERDE chegou");
+                break;
+        }
+    }
+
 }

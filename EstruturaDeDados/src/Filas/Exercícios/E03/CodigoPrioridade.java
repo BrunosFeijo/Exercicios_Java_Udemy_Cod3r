@@ -3,7 +3,7 @@ package Filas.Exercícios.E03;
 import java.util.Comparator;
 
 public enum CodigoPrioridade {
-    VERMELHO(1),  AMARELO(2), VERDE(3);
+    VERMELHO(0),  AMARELO(1), VERDE(2);
     private final int valor;
 
     CodigoPrioridade(int valor) {
