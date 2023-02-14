@@ -6,24 +6,23 @@ package Filas.Exercícios.E03;
 // * Cada consulta dura cerca de 5 segundos, e depois o próximo da fila é chamado.
 // * A cada 4 segundos, uma pessoa chega no PS com prioridade aleatória.
 
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class E03 {
     public static void main(String[] args) {
-        PriorityQueue<Integer> fila = new PriorityQueue<>();
+        PriorityQueue<CodigoPrioridade> fila = new PriorityQueue<>();
 
-        fila.add(1);
-        fila.add(3);
-        fila.add(2);
-        fila.add(1);
-        fila.add(3);
-
-        System.out.println(fila);
+        fila.add(CodigoPrioridade.VERDE);
+        fila.add(CodigoPrioridade.VERMELHO);
+        fila.add(CodigoPrioridade.AMARELO);
+        fila.add(CodigoPrioridade.VERMELHO);
+        fila.add(CodigoPrioridade.VERDE);
+        fila.add(CodigoPrioridade.AMARELO);
 
         Thread atendimento = new Thread(new Runnable() {
             @Override
             public void run() {
+
 
             }
         });
@@ -34,6 +33,9 @@ public class E03 {
             }
         });
     }
+    public static void atendimento(PriorityQueue fila){
+        System.out.println("Paciente " + fila.poll() + " está sendo atendido");
+    }
 
-
+    
 }
