@@ -1,12 +1,14 @@
 package Collections_Java.Set;
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
 public class Heterogeneo {
     public static void main(String[] args) {
-        HashSet<java.io.Serializable> conjunto = new HashSet<>();
-
+        // Serializable permite serializar controlar melhor os objetos inseridos no conjunto,
+        // evitando a exceção "NotSerializableException"
+        HashSet<Serializable> conjunto = new HashSet<>();
         conjunto.add(1.2); // double -> Double
         conjunto.add(true); // boolean -> Boolean
         conjunto.add("Teste"); // String
