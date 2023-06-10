@@ -13,9 +13,10 @@ public class Lista {
         lista.add("Leonardo");
         lista.add("Guilherme");
 
-        System.out.println("Lista apenas ordem de inserção: " + lista);
+        System.out.println("Lista apenas com ordem de inserção: " + lista);
         System.out.println("Ricardo está no índice: " + lista.indexOf("Ricardo"));
-        System.out.println("última ocorrência de Guilherme na lista: " + lista.lastIndexOf("Guilherme"));
-        
+        System.out.println("Última ocorrência de Guilherme na lista (índice): " + lista.lastIndexOf("Guilherme"));
+        lista.set(2,"Teste");
+        System.out.println("Lista após substituir o elemento no índice 2: " + lista);
     }
 }
