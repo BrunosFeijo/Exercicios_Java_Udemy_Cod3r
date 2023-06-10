@@ -3,3 +3,12 @@
 // Não aceita objetos duplicados
 // Pode ser ordenado
 // Não é indexado
+
+TreeSet = Ordena lista
+LinkedHashSet = Mantem ordem de inserção
+
+addAll() = união entre conjuntos
+retainAll() = intercção entre conjuntos
+
+SortedSet = os elementos são armazenados em uma ordem específica definida por um critério de classificação (Comparable ou Comparator)
+            Possui métodos adicionais ligados a ordenação: first(), last(), headSet(),tailSet(),subSet()...
