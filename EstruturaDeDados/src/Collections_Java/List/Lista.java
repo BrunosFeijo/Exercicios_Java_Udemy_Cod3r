@@ -8,7 +8,7 @@ import java.util.function.Predicate;
 
 public class Lista {
     public static void main(String[] args) {
-        Predicate<String> isMaior = palavra -> palavra.charAt(0) > 'J' ;
+        Predicate<String> isMaiorQueJ = palavra -> palavra.charAt(0) > 'J' ;
         List<String> lista = new ArrayList<>();
         lista.add("Bruno");
         lista.add("Guilherme");
@@ -22,10 +22,10 @@ public class Lista {
         System.out.println("Última ocorrência de Guilherme na lista (índice): " + lista.lastIndexOf("Guilherme"));
         lista.set(2,"Teste");
         System.out.println("Lista após substituir o elemento no índice 2: " + lista);
-//        Collections.sort(lista);
+//        Collections.sort(lista); pode ordenar tbm
         lista.sort(Comparator.naturalOrder());
         System.out.println("Lista ordenada: " + lista);
-        lista.removeIf(isMaior);
+        lista.removeIf(isMaiorQueJ);
         System.out.println("Lista após remover elementos que começam com letras maiores que 'J': "+ lista);
     }
 }
