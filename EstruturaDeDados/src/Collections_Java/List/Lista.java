@@ -1,6 +1,8 @@
 package Collections_Java.List;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Lista {
@@ -18,5 +20,8 @@ public class Lista {
         System.out.println("Última ocorrência de Guilherme na lista (índice): " + lista.lastIndexOf("Guilherme"));
         lista.set(2,"Teste");
         System.out.println("Lista após substituir o elemento no índice 2: " + lista);
+//        Collections.sort(lista);
+        lista.sort(Comparator.naturalOrder());
+        System.out.println("Lista ordenada: " + lista);
     }
 }
