@@ -4,9 +4,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class Lista {
     public static void main(String[] args) {
+        Predicate<String> isMaior = palavra -> palavra.charAt(0) > 'J' ;
         List<String> lista = new ArrayList<>();
         lista.add("Bruno");
         lista.add("Guilherme");
@@ -23,5 +25,7 @@ public class Lista {
 //        Collections.sort(lista);
         lista.sort(Comparator.naturalOrder());
         System.out.println("Lista ordenada: " + lista);
+        lista.removeIf(isMaior);
+        System.out.println("Lista após remover elementos que começam com letras maiores que 'J': "+ lista);
     }
 }
