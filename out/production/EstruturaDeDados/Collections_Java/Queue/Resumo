@@ -1,0 +1,15 @@
+// Pode ser heterogênea
+// Pode ser homogênea
+// Aceita objetos duplicados
+// Guarda ordem de inserção
+// Pode ser ordenado
+// É indexado
+// FIFO (First in / First Out)
+
+add() = em caso de erro retorna uma exceção
+offer() = em caso de erro retorna null
+poll() = em caso de erro retorna null
+remove() = em caso de erro retorna uma exceção
+peek() = espia o primeiro elemento da fila. Se estiver vazia retorna null
+element() = espia o primeiro elemento da fila. Se estiver vazia retorna uma exceção
+
