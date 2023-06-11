@@ -2,8 +2,6 @@
 // Pode ser homogênea
 // Aceita objetos duplicados
 // Guarda ordem de inserção
-// Pode ser ordenado
-// É indexado
 // FIFO (First in / First Out)
 
 add() = em caso de erro retorna uma exceção
