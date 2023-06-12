@@ -11,6 +11,7 @@ public class Map_ChaveValor {
         usuarios.put(3, "Rafaela");
         usuarios.put(4, "Rebeca");
         usuarios.put(5, "Roberto");
+        usuarios.putIfAbsent(5,"Exemplo"); // não será incluído
 
         System.out.println("Tamanho da lista: " + usuarios.size());
         System.out.println("Está vazia: " + usuarios.isEmpty());
@@ -24,7 +25,7 @@ public class Map_ChaveValor {
 
         System.out.println("Pode ser espiado via chave (get): ");
         System.out.println("Usuário 3: " + usuarios.get(3));
-        System.out.println("Usuário 1: " + usuarios.getOrDefault(1,"Roberto"));
+        System.out.println("Usuário 2 (não existe): " + usuarios.getOrDefault(2,"Erro"));
 
     }
 }

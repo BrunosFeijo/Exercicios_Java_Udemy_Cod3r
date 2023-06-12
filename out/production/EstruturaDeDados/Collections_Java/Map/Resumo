@@ -16,3 +16,4 @@ entrySet() = lista ambos
 containsKey() = procura chave / retorna boolean
 containsValue() = procura valores / retorna boolean
 get() = procura pela chave e retorna o valor
+getOrDefault() = procura pela chave, se não encontrar, retorna o valor definido na implementação
