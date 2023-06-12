@@ -10,8 +10,10 @@ public class Map_ChaveValor {
         usuarios.put(20, "Ricardo");
         usuarios.put(3, "Rafaela");
         usuarios.put(4, "Rebeca");
-        usuarios.put(5, "Roberto");
-        usuarios.putIfAbsent(5,"Exemplo"); // não será incluído
+        usuarios.put(1, "Guilhemre"); // substitui Roberto
+        usuarios.replace(3, "Roberto"); // substitui Rafaela
+        usuarios.replace(6, "Exemplo errado"); // não substitui ninguém ou adiciona
+        usuarios.putIfAbsent(1,"Exemplo"); // não será incluído
 
         System.out.println("Tamanho da lista: " + usuarios.size());
         System.out.println("Está vazia: " + usuarios.isEmpty());
@@ -27,6 +29,10 @@ public class Map_ChaveValor {
         System.out.println("Usuário 3: " + usuarios.get(3));
         System.out.println("Usuário 2 (não existe): " + usuarios.getOrDefault(2,"Erro"));
 
+        System.out.println("Listar itens: ");
+        for (Map.Entry<Integer,String> usuario:usuarios.entrySet()){
+            System.out.println(usuario);
+        }
     }
 }
 

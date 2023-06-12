@@ -8,7 +8,8 @@
 HashMap - Não guarda ordem, porém é mais eficiente
 TreeMap - Ordena por chave ou conforme Comparable
 
-put() = adiciona novos elementos
+put() = adiciona novos elementos // ou substitui os valores já existentes
+putIfAbsent() = adiciona novos elementos // ou retorna o valor da chave já existente sem alterações
 keySet() = lista chaves
 values() = lista valores
 entrySet() = lista ambos
