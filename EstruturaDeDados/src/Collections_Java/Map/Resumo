@@ -1,0 +1,18 @@
+// Pode ser homogênea
+// Estrutura de Chave-Valor (Key-Value)
+// Aceita valores duplicados
+// Não aceita chaves duplicadas
+// Não guarda ordem de inserção
+// Pode ser indexado (usando a chave)
+
+HashMap - Não guarda ordem, porém é mais eficiente
+TreeMap - Ordena por chave ou conforme Comparable
+
+put() = adiciona novos elementos
+keySet() = lista chaves
+values() = lista valores
+entrySet() = lista ambos
+
+containsKey() = procura chave / retorna boolean
+containsValue() = procura valores / retorna boolean
+get() = procura pela chave e retorna o valor

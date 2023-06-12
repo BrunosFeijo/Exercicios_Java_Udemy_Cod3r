@@ -14,3 +14,6 @@ remove() = remove do topo / se vazia retorna uma exceção
 
 peek() = espia o topo da fila. Se estiver vazia retorna null
 element() = espia o topo da fila. Se estiver vazia retorna uma exceção
+
+
+trimToSize() = ajusta o tamanho do Vector para a quantidade preenchida do array.
