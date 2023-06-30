@@ -1,0 +1,13 @@
+// Pode ser heterogênea
+// Pode ser homogênea
+// Aceita objetos duplicados
+// Guarda ordem de inserção
+// Pode ser ordenado
+// É indexado
+
+set() = substitui o índice indicado por um novo objeto.
+indexOf() = procura o objeto e retorna o índice
+lastIndexOf() = procura a última ocorrência do objeto na lista
+remove() = se remover pelo indice ele retorna o objeto removido / se remover pelo objeto ele retorna um boolean
+sort(Comparator.naturalOrder()) = ordena uma lista de forma natural usando o Comparable do objeto
+removeIf(Predicate) = remove os elementos que cumprirem a condição do predicado.

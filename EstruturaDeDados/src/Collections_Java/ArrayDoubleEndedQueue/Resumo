@@ -1,0 +1,22 @@
+// Pode ser heterogênea
+// Pode ser homogênea
+// Aceita objetos duplicados
+// Guarda ordem de inserção
+// LIFO (Last in / First Out) e FIFO (First in / First Out)
+
+add() = adiciona no topo / em caso de erro retorna uma exceção
+offer() = adiciona no topo / em caso de erro retorna null
+offerLast() = adiciona no topo
+offerFirst() = adiciona no inicio
+push() = adiciona no inicio // void
+
+pop() = remove do inicio / se vazia retorna  exceção
+poll() = remove do inicio / se vazia retorna null
+remove() = remove do inicio / se vazia retorna uma exceção
+
+peek() = espia o inicio da fila. Se estiver vazia retorna null
+element() = espia o inicio da fila. Se estiver vazia retorna uma exceção
+
+peekLast() = espia o final da fila
+pollLast() = remove do final da fila // null
+removeLast() = remove do final da fila // exceção
