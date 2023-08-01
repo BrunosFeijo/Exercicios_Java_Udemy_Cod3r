@@ -6,7 +6,7 @@ import java.util.function.Consumer;
 
 public class Consumidor {
     public static void main(String[] args) {
-        Consumer<Produto> imprimir = p -> System.out.println(p);
+        Consumer<Produto> imprimir = System.out::println;
 
         Produto p1 = new Produto("Caneta", 12.30,0.10);
         Produto p2 = new Produto("Borracha", 5,0.10);
