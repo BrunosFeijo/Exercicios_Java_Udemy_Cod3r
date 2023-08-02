@@ -18,7 +18,7 @@ public class Main {
         DecimalFormat duasCasasDecimais = new DecimalFormat("##.##");
 
         BinaryOperator<Double> comDesconto = (x, y) -> x * (1 - y);
-        UnaryOperator<Double> comImposto = x -> x >= 2500 ? x += (x * 0.085) : x;
+        UnaryOperator<Double> comImposto = x -> x >= 2500 ? x + (x * 0.085) : x;
         UnaryOperator<Double> comFrete = x -> x >= 3000 ? x + 100 : x + 50;
         Function<Double,String> formatar = x -> "R$" + duasCasasDecimais.format(x);
 
