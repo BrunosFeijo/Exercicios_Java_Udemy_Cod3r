@@ -9,6 +9,5 @@ public class PredicadoComposicao {
 
         System.out.println(isPar.and(isTresDigitos).negate().test(123));
         System.out.println(isPar.or(isTresDigitos).negate().test(123));
-
     }
 }
