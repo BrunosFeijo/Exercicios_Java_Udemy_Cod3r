@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 public class Main {
     public static void main(String[] args) {
         Consumer<String> print = System.out::print;
-        Consumer<Integer> println = System.out::println;
+        Consumer<String> println = System.out::println;
 
         Stream<String> langs = Stream.of("Java ", "Lua ", "JS\n");
         System.out.println("Usa ForEach ligado ao stream diretamente...");
@@ -23,12 +23,12 @@ public class Main {
         System.out.println("\nUsa ForEach a um array (Arrays.stream com inicio e fim)...");
         Arrays.stream(maisLangs,1,3).forEach(print);
 
-        List<String> outrasLangs= Arrays.asList("C ", "PHP ","Kotlin\n ");
+        List<String> outrasLangs= Arrays.asList("C ", "PHP ","Kotlin");
         System.out.println();
         System.out.println("\nUsa uma List.stream...");
-        outrasLangs.stream().forEach(print);
+        outrasLangs.stream().forEach(println);
         System.out.println("\nUsa uma List.parallelStream...");
-        outrasLangs.parallelStream().forEach(print);
+        outrasLangs.parallelStream().forEach(println);
 
         //Streams infinitas
         //Stream.generate(() -> "a").forEach(print);
