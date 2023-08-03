@@ -21,6 +21,5 @@ public class Main {
                 .map(primeiraLetra)
                 .map(Utilitarios::grito)
                 .forEach(print);
-
     }
 }

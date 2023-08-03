@@ -8,6 +8,7 @@ import java.util.stream.Stream;
 public class Main {
     public static void main(String[] args) {
         Consumer<String> print = System.out::print;
+        //Consumer<Integer> print2 = System.out::print;
         Consumer<String> println = System.out::println;
 
         Stream<String> langs = Stream.of("Java ", "Lua ", "JS\n");
@@ -32,7 +33,7 @@ public class Main {
 
         //Streams infinitas
         //Stream.generate(() -> "a").forEach(print);
-        //Stream.iterate(0,n -> n+1).forEach(println);
+        //Stream.iterate(0,n -> n+1).forEach(print2);
 
 
     }
