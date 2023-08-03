@@ -9,6 +9,7 @@ public class InterfacesNaoFuncionaisComLambda {
                     try {
                         Thread.sleep(100);
                     } catch (Exception e) {
+                        throw new RuntimeException(e);
                     }
                 }
         };
@@ -18,7 +19,7 @@ public class InterfacesNaoFuncionaisComLambda {
         Thread t2 = new Thread(trabalho2);
         Thread t3 = new Thread(trabalho3);
 
-        t1.start();;
+        t1.start();
         t2.start();
         t3.start();
     }
@@ -28,6 +29,7 @@ public class InterfacesNaoFuncionaisComLambda {
             try {
                 Thread.sleep(100);
             } catch (Exception e) {
+                throw new RuntimeException(e);
             }
         }
     }
