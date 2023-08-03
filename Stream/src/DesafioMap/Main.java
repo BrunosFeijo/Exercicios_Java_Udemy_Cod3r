@@ -13,12 +13,12 @@ public class Main {
         List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
         Function<Integer, String> binario = Integer::toBinaryString;
         UnaryOperator<String> inverter = Main::reverseString;
-        Function<String, Integer> decimal = x -> Integer.parseInt(x, 2);
+        Function<String, Integer> inteiro = x -> Integer.parseInt(x, 2);
 
         nums.stream()
                 .map(binario)
                 .map(inverter)
-                .map(decimal)
+                .map(inteiro)
                 .forEach(System.out::println);
 
     }
