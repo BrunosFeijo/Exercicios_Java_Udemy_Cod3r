@@ -2,6 +2,7 @@ package Filtro;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -19,10 +20,11 @@ public class Main {
         Predicate<Aluno> aprovado = a -> a.nota >= 7;
         Function<Aluno,String> saudacaoAprovados =
                 a -> "Parabéns " + a.nome + "! Você foi aprovado(a)!";
+        Consumer<String> print = System.out::println;
 
         alunos.stream()
                 .filter(aprovado)
                 .map(saudacaoAprovados)
-                .forEach(System.out::println);
+                .forEach(print);
     }
 }
