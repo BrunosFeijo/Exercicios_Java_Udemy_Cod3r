@@ -25,9 +25,11 @@ public class Main {
                 + " -  $" + String.format("%.2f",x.getValor() - (x.getValor()) * x.getDesconto());
 
         System.out.println("Produtos com Desconto acima de 30%: ");
-        //produtos.filter(descontoAlto).map(toStringProduto).forEach(println);
+        produtos.filter(descontoAlto).map(toStringProduto).forEach(println);
 
-        System.out.println("Produtos com Frete Grátis: ");
+        produtos = Stream.of(p1,p2,p3,p4,p5,p6);
+
+        System.out.println("\nProdutos com Frete Grátis: ");
         produtos.filter(freteGratis).map(toStringProduto).forEach(println);
     }
 }
