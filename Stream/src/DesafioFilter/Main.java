@@ -31,5 +31,10 @@ public class Main {
 
         System.out.println("\nProdutos com Frete Grátis: ");
         produtos.filter(freteGratis).map(toStringProduto).forEach(println);
+
+
+        produtos = Stream.of(p1,p2,p3,p4,p5,p6);
+        System.out.println("\nProdutos com Frete Grátis e desconto acima de 30%: ");
+        produtos.filter(descontoAlto).filter(freteGratis).map(toStringProduto).forEach(println);
     }
 }
