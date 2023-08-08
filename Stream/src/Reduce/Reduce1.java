@@ -13,7 +13,7 @@ public class Reduce1 {
         Integer total1 = nums.parallelStream().reduce(soma).get();  // reduce retorna Optional, portanto get()
         System.out.println(total1); //45
 
-        // identity informa um valor inicial ao calculo
+        // identity informa um valor inicial ao cálculo
         // se fosse parallelStream informaria o valor para todas as iterações do array
         Integer total2 = nums.stream().reduce(100, soma);
         System.out.println(total2); // 145
