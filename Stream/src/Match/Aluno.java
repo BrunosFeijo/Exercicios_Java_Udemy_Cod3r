@@ -1,8 +1,8 @@
-package Reduce;
+package Match;
 
 public class Aluno {
     String nome;
-    public double nota;
+    double nota;
 
     public Aluno(String nome, double nota) {
         this.nome = nome;
