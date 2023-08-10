@@ -12,7 +12,7 @@ public class Causa {
         try {
             metodoB(aluno);
         } catch (Exception e) {
-            throw new IllegalArgumentException(e);
+            throw new IllegalArgumentException(e);// utiliza a causa da exceção no metodoB
         }
     }
     static void metodoB(Aluno aluno){
