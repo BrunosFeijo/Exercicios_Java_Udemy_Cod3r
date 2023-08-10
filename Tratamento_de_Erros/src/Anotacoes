@@ -1,0 +1,7 @@
+Tipos de Erros:
+
+Em tempo de Compilação => quando o compilador detecta o erro durante a passagem do arquivo '.java' para '.class'.
+Ex: erros de sintaxe, nullPointerException, objetos nulos sendo acessados...
+
+Em tempo de Execução => quando o programa já está rodando, mas falha por problemas de conexão.
+Ex: sem internet, sem acesso ao banco de dados...

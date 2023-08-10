@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/POO/POO.iml" filepath="$PROJECT_DIR$/POO/POO.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursividade/Recursividade.iml" filepath="$PROJECT_DIR$/Recursividade/Recursividade.iml" />
       <module fileurl="file://$PROJECT_DIR$/Stream/Stream.iml" filepath="$PROJECT_DIR$/Stream/Stream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tratamento_de_Erros/Tratamento_de_Erros.iml" filepath="$PROJECT_DIR$/Tratamento_de_Erros/Tratamento_de_Erros.iml" />
     </modules>
   </component>
 </project>
