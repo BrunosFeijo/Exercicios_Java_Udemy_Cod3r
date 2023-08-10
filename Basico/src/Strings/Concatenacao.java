@@ -16,8 +16,8 @@ public class Concatenacao {
         String um = String.valueOf(1);
         System.out.println("valuesOf faz a conversao do tipo para String: " + um);
 
-        // Estas concatenações fazem o mesmo trabalho, porém gastam muito espaço em memória já que, uma String sendo imutável,
-        // gera uma nova referência na memória a cada concatenação
+        // Estas concatenações fazem o mesmo trabalho, porém gastam muito espaço em memória já que,
+        // uma String sendo imutável, gera uma nova referência na memória a cada concatenação
         String concatenacao = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, " +
                 "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad " +
                 "minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea " +
