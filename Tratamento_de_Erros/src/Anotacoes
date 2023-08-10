@@ -18,3 +18,5 @@ Pode ter dois filhos (por herança):
             Ex: NullPointer, ArrayOutOfBounds, ArithmeticException etc.
         -> Outras Exceções = Exceções checadas. Deve ser tratada.
             Ex:
+
+Bloco Finally => quando se é necessário realizar alguma operação após ocorrer erro no bloco 'try'. Finaliza o bloco
