@@ -5,3 +5,12 @@ Ex: erros de sintaxe, nullPointerException, objetos nulos sendo acessados...
 
 Em tempo de Execução => quando o programa já está rodando, mas falha por problemas de conexão.
 Ex: sem internet, sem acesso ao banco de dados...
+
+Throwable => Classe Mãe de todos os lançamentos de erro.
+Pode ter dois filhos (por herança):
+
+Error => Casos críticos para a execução. Ex: falta de mémoria
+
+Exception => Quando o fluxo natural do programa é interrompido para uma execução tratável.
+Ex: Ao procurar um referência em algum site e ele estiver fora do ar, _
+pode-se adicionar uma exceção para procurar essa referência em outro site
