@@ -43,7 +43,7 @@ public class Comparadores {
         System.out.println("-1 = a < b   ==> " + a.compareTo(b));
         System.out.println(" 0 = (a == b)==>  " + a.compareTo("a"));
         System.out.println(">=1 = b > a  ==>  " + b.compareTo(a));
-        System.out.println(">=1 = a > b  ==> " + a.compareTo(aMaiusculo));
+        System.out.println(">=1 = a > A  ==> " + a.compareTo(aMaiusculo));
 
     }
 }
