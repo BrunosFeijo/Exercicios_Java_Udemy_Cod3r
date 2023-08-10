@@ -1,7 +1,7 @@
 package Basico;
 
 public class Aluno {
-    String nome;
+    public String nome;
 
     public Aluno(String nome) {
         this.nome = nome;
