@@ -60,6 +60,9 @@ public class Campo {
             return false;
         }
     }
+    void minar(){
+        minado = true;
+    }
 
     boolean vizinhancaSegura() {
         return vizinhos.stream().noneMatch(v -> v.minado);
