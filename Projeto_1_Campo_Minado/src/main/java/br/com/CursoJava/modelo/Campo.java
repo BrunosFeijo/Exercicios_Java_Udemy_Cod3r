@@ -53,7 +53,7 @@ public class Campo {
                 throw new ExplosaoException();
             }
             if (vizinhancaSegura()) {
-                vizinhos.forEach(c -> c.abrir());
+                vizinhos.forEach(Campo::abrir);
             }
             return true;
         } else {
@@ -90,7 +90,7 @@ public class Campo {
         } else if (aberto) {
             return " ";
         }else{
-            return "?";
+            return "-";
         }
     }
 

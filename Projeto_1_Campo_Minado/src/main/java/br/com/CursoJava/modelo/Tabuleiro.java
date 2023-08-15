@@ -24,13 +24,13 @@ public class Tabuleiro {
         campos.stream()
             .filter(c -> c.getLinha() == linha && c.getColuna() == coluna)
             .findFirst()
-            .ifPresent(c -> c.abrir());
+            .ifPresent(Campo::abrir);
     }
     public void alternarMarcacao(int linha, int coluna){
         campos.stream()
             .filter(c -> c.getLinha() == linha && c.getColuna() == coluna)
             .findFirst()
-            .ifPresent(campo -> campo.alternarMarcacao());
+            .ifPresent(Campo::alternarMarcacao);
     }
 
     private void gerarCampos() {
@@ -72,6 +72,7 @@ public class Tabuleiro {
         for (int lin = 0; lin < qtdLinhas; lin++) {
             for (int col = 0; col < qtdColunas; col++) {
                 stringBuilder.append(" ").append(campos.get(i)).append(" ");
+                i++;
             }
             stringBuilder.append("\n");
         }
