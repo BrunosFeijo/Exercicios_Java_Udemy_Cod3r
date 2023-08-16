@@ -29,6 +29,7 @@ public class TabuleiroConsole {
 
                     if("n".equalsIgnoreCase(resposta)){
                         continuar = false;
+                        System.out.println("Fim de Jogo");
                     }else{
                         tabuleiro.reiniciar();
                     }
@@ -38,6 +39,7 @@ public class TabuleiroConsole {
             }finally {
                 entrada.close();
             }
+
     }
 
     private void cicloDoJogo() {

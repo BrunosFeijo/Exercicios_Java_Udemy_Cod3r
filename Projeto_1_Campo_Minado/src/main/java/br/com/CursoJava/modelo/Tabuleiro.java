@@ -76,7 +76,13 @@ public class Tabuleiro {
     public String toString(){
         StringBuilder stringBuilder = new StringBuilder();
         int i = 0;
+        stringBuilder.append("  ");
+        for (int j = 0; j < qtdColunas; j++) {
+            stringBuilder.append(" ").append(j).append(" ");
+        }
+        stringBuilder.append("\n");
         for (int lin = 0; lin < qtdLinhas; lin++) {
+            stringBuilder.append(lin).append(" ");
             for (int col = 0; col < qtdColunas; col++) {
                 stringBuilder.append(" ").append(campos.get(i)).append(" ");
                 i++;

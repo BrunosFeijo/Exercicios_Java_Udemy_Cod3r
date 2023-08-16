@@ -5,7 +5,7 @@ import br.com.CursoJava.visao.TabuleiroConsole;
 
 public class Main {
     public static void main(String[] args) {
-        Tabuleiro tabuleiro = new Tabuleiro(6,6,6);
+        Tabuleiro tabuleiro = new Tabuleiro(6,6,3);
         new TabuleiroConsole(tabuleiro);
     }
 }
