@@ -20,7 +20,7 @@ public class ListaChaveValor<C extends Number, V> {
     public V getValor(C chave){
         if(chave == null) return null;
 
-        Optional<ChaveValor<C,V>> chaveValorOptional = itens.stream().filter(chave::equals).findAny();
+        Optional<ChaveValor<C,V>> chaveValorOptional = itens.stream().filter(par -> chave.equals(par.getChave())).findAny();
 
         return chaveValorOptional.isPresent() ? chaveValorOptional.get().getValor() : null;
     }
