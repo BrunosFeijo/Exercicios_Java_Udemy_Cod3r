@@ -2,7 +2,7 @@ package Generics;
 
 import java.util.Objects;
 
-public class ChaveValor<C,V> implements Comparable<ChaveValor<C,V>>{
+public class ChaveValor<C,V>{
 
     private C chave;
     private V valor;
@@ -40,8 +40,4 @@ public class ChaveValor<C,V> implements Comparable<ChaveValor<C,V>>{
         return Objects.hash(getChave());
     }
 
-    @Override
-    public int compareTo(ChaveValor<C, V> o) {
-        return 0;
-    }
 }
